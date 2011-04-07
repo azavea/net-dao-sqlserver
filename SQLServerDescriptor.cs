@@ -93,6 +93,11 @@ namespace Azavea.Open.DAO.SQLServer
             Password = password;
         }
 
+        public override IDaLayer CreateDataAccessLayer()
+        {
+            return new SQLServerDaLayer(this);
+        }
+
         /// <summary>
         /// Begins the transaction.  Returns a NEW ConnectionDescriptor that you should
         /// use for operations you wish to be part of the transaction.
