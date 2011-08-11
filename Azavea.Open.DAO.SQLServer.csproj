@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\ProductAssemblyInfo.cs">
+      <Link>ProductAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="SQLServerDaLayer.cs" />
     <Compile Include="SQLServerDescriptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
